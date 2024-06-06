@@ -1,0 +1,1 @@
+print(sum(sum(len(value) in [2, 3, 4, 7] for value in line.split(" | ")[1].split(" ")) for line in  [str(line).replace("\n","") for line in open("Day 8/input_data.txt", "r")]))

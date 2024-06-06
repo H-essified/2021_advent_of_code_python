@@ -1,0 +1,2 @@
+lines = [int(line.replace("\n","")) for line in open("input_data.txt", "r")]
+print(sum(sum((lines[y]) for y in range(x, x + 3)) > sum((lines[y]) for y in range(x - 1, x + 2)) for x in range(1, len(lines) -2)))
